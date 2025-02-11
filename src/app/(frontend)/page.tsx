@@ -4,9 +4,11 @@ import { getPayload } from 'payload'
 import React from 'react'
 import { fileURLToPath } from 'url'
 
-import config from '@/payload.config'
+import config from '../../payload.config'
+
 import './styles.css'
 import Link from 'next/link'
+import Home from './home/Home'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -17,12 +19,8 @@ export default async function HomePage() {
   const fileURL = `vscode://file/${fileURLToPath(import.meta.url)}`
 
   return (
-    <div className="text-white">
-      <div className="flex py-8 bg-[#282828]">
-        <div className="">
-          <Link href="#">Home</Link>
-        </div>
-      </div>
-    </div>
+    <>
+      <Home />
+    </>
   )
 }

@@ -7,7 +7,8 @@ export const Services: CollectionConfig = {
   },
   fields: [
     {
-      name: 'Name of the Project',
+      name: 'service_name',
+      label: 'Name of the Service',
       type: 'text',
       required: true,
     },

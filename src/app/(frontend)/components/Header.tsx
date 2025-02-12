@@ -24,7 +24,7 @@ const Header = () => {
     fetchServices()
   }, [])
   return (
-    <header className="bg-[#282828] py-8 ">
+    <header className="bg-[#282828] py-8">
       <div className="container mx-auto flex text-white items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
@@ -41,19 +41,19 @@ const Header = () => {
           <a href="/" className="text-[18px] hover:text-[#E37715] ">
             HOME
           </a>
-          <div className="relative group">
-            <a href="/about" className="text-[18px]  flex items-center hover:text-[#E37715]">
+          <div className="relative group z-50">
+            <a href="/about" className="text-[18px] flex items-center hover:text-[#E37715]">
               ABOUT US{' '}
               <span className="ml-1">
                 <IoIosArrowDown fill="#E37715" />
               </span>
             </a>
-            {/* Dropdown (if needed) */}
-            <div className="absolute hidden group-hover:block bg-[#282828] text-white mt-2 py-2 w-40 rounded shadow-lg">
-              <a href="/about/team" className="block px-4 py-2 hover:bg-[#282828]">
+            {/* Dropdown (Fixed) */}
+            <div className="absolute top-full left-0 w-48 bg-[#282828] text-white rounded shadow-lg z-50 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 pt-2">
+              <a href="/about/team" className="block px-4 py-2 hover:bg-gray-700">
                 About the Company
               </a>
-              <a href="/about/company" className="block px-4 py-2 hover:bg-[#282828]">
+              <a href="/about/company" className="block px-4 py-2 hover:bg-gray-700">
                 About the Owner
               </a>
             </div>
@@ -77,7 +77,7 @@ const Header = () => {
               </span>
             </a>
             {/* Dropdown */}
-            <div className="absolute hidden group-hover:block bg-[#282828] text-white mt-2 py-2 w-40 rounded shadow-lg">
+            <div className="absolute left-0 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col bg-[#282828] text-white mt-2 py-2 w-48 rounded shadow-lg transition-all duration-300">
               {services.map((service) => (
                 <a
                   key={service.id}

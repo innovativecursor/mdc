@@ -1,6 +1,17 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind utilities;
 :root {
-  --font-family: 'Inter', serif;
+  --font-family: 'Inter', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+/* Reset and global styles */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
 }

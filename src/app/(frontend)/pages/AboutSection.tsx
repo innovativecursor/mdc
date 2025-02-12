@@ -48,25 +48,34 @@ const AboutSection = () => {
   return (
     <section id="#about">
       <div className="bg-[#282828] flex justify-center">
-        <div className="bg-[#F7E9D5] my-32 p-8 rounded-3xl w-full relative flex container mx-auto">
+        <div className="bg-[#F7E9D5] my-32 pr-8 py-8 rounded-3xl w-full relative flex container mx-auto">
           {/* Sidebar */}
-          <div className="flex flex-col w-1/4 border-r border-orange-300 pr-6">
-            <button
-              className={`text-left text-xl font-bold ${activeTab === 'mdc' ? 'text-black' : 'text-gray-500'}`}
-              onClick={() => setActiveTab('mdc')}
-            >
-              ABOUT
-              <br /> MDC
-            </button>
-            <button
-              className={`mt-6 text-left text-xl font-bold ${activeTab === 'owner' ? 'text-black' : 'text-gray-500'}`}
-              onClick={() => setActiveTab('owner')}
-            >
-              ABOUT THE
-              <br /> OWNER
-            </button>
+          <div className="flex flex-col justify-evenly w-1/4 pr-6">
+            <div className="flex justify-center min-h-[50%]">
+              <button
+                className={`text-left text-[16px] font-semibold ${activeTab === 'mdc' ? 'text-black bg-[#F7E9D5]' : 'text-gray-500 bg-[#282828]'}`}
+                onClick={() => setActiveTab('mdc')}
+              >
+                ABOUT
+                <br />
+                <div className="text-[40px] font-bold">
+                  <span>MDC</span>
+                </div>
+              </button>
+            </div>
+            <div className="flex justify-center min-h-[50%]">
+              <button
+                className={`mt-6 text-left text-[16px] font-semibold ${activeTab === 'owner' ? 'text-black bg-[#F7E9D5]' : 'text-gray-500 bg-[#282828]'}`}
+                onClick={() => setActiveTab('owner')}
+              >
+                ABOUT THE
+                <br />
+                <div className="text-[40px] font-bold">
+                  <span>OWNER</span>
+                </div>
+              </button>
+            </div>
           </div>
-
           {/* Content */}
           <div className="flex px-10 py-28 ">
             {activeTab === 'mdc' ? (

@@ -39,7 +39,7 @@ const Header = () => {
     fetchServices()
   }, [])
   return (
-    <header className="bg-[#282828] py-8">
+    <header className="bg-[#282828] py-8 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex text-white items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">

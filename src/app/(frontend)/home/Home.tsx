@@ -9,8 +9,7 @@ const Home = () => {
       {/* Header Component */}
       <Header />
       <Hero />
-      <AboutSection />
-      {/* Main Content */}
+      {/* <AboutSection /> */}
     </div>
   )
 }

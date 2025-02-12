@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import heroSectionImg from './../public/assets/heroSection/hero_section_image.png'
-import Button from './Button'
+import Button from '../components/Button'
 
 const slides = [
   {

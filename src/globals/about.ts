@@ -3,6 +3,9 @@ import { GlobalConfig } from 'payload'
 const About: GlobalConfig = {
   slug: 'about',
   label: 'About Us',
+  access: {
+    read: () => true, // Anyone can read
+  },
   fields: [
     {
       label: 'About Us',

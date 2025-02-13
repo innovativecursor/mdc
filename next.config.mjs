@@ -9,15 +9,16 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'localhost',
-        port: '3001',
+        port: '',
         pathname: '/api/media/file/**',
       },
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        pathname: '/dip2pjbju/**', // Replace with your Cloudinary cloud name
+        pathname: '/dip2pjbju/**',
       },
     ],
+    domains: ['localhost'],
   },
 }
 

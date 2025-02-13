@@ -9,7 +9,7 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Services } from './collections/Services'
 import { cloudinaryStorage } from 'payload-cloudinary'
-import About from './globals/about'
+import About from './globals/About'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
